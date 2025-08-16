@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Booking - Elegant Events</title>
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Elegant Events</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="booking-form">
+      <h2>Book Your Event</h2>
+      <p>
+        Choose your preferred date and tell us about your event. We'll get back
+        to you shortly!
+      </p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="date" required />
+        <textarea placeholder="Event Details" required></textarea>
+        <button type="submit">Request Booking</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Elegant Events. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function switchLanguage(lang) {
+        window.location.href = `/${lang}/index.html`;
+      }
+    </script>
+  </body>
+</html>

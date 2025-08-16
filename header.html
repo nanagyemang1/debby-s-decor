@@ -1,0 +1,14 @@
+<!-- In your main HTML file -->
+<div id="header-placeholder"></div>
+
+<script>
+  fetch("/includes/header.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+
+  function switchLanguage(lang) {
+    window.location.href = `/${lang}/index.html`;
+  }
+</script>
